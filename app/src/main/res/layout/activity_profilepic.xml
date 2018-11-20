@@ -1,0 +1,36 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/gofilter"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"/>
+    <RelativeLayout
+        android:id="@+id/myView"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+    <com.sagra.stylemaker_v1.etc.CustomZoomableImageView_profile
+        android:id="@+id/image"
+        android:layout_width="400dp"
+        android:layout_height="400dp"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:background="@color/white"
+        android:text="save"/>
+</LinearLayout>

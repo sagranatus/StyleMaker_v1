@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메이커, 가격, 옷 특징 등 태그를 달아보세요."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+    android:id="@+id/tag"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="#자라 #2만원 #흰티 #최애"/>
+    <ImageButton
+        android:id="@+id/addtag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="5"
+        android:background="@color/colorWhite"
+        android:src="@drawable/addtag"/>
+    </LinearLayout>
+
+    </LinearLayout>

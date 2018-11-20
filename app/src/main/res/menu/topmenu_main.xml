@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_zero"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/more"
+        android:title="" />
+    <item
+        android:id="@+id/action_one"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/addcodi_small"
+        android:title="" />
+    <item
+        android:id="@+id/action_two"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/fromcodi"
+        android:title="" />
+
+</menu>

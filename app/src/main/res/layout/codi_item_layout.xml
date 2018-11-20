@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/appdate"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:background="@drawable/border_large"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <ImageView
+        android:id="@+id/appicon"
+        android:padding="2dp"
+        android:background="@drawable/border"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+        <ImageView
+            android:id="@+id/appicon2"
+            android:padding="2dp"
+            android:background="@drawable/border"
+            android:layout_below="@+id/appicon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"/>
+        <ImageView
+            android:id="@+id/appicon3"
+            android:padding="2dp"
+            android:background="@drawable/border"
+            android:layout_below="@+id/appicon2"
+            android:paddingLeft="7dp"
+            android:layout_width="75dp"
+            android:layout_height="60dp"/>
+        <ImageView
+            android:id="@+id/appicon4"
+            android:padding="2dp"
+            android:background="@drawable/border"
+            android:layout_toRightOf="@+id/appicon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"/>
+        <ImageView
+            android:id="@+id/appicon5"
+            android:padding="2dp"
+            android:background="@drawable/border"
+            android:layout_toRightOf="@+id/appicon2"
+            android:layout_below="@+id/appicon4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"/>
+        <ImageView
+            android:id="@+id/appicon6"
+            android:padding="2dp"
+            android:background="@drawable/border"
+            android:layout_toRightOf="@+id/appicon3"
+            android:layout_below="@+id/appicon5"
+            android:paddingLeft="14dp"
+            android:layout_width="75dp"
+            android:layout_height="60dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

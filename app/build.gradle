@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.sagra.stylemaker_v1"
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.android.support:design:27.1.0'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    // 이 아래에는 filter 작업시 필요함
+    compile 'info.androidhive:imagefilters:1.0.7'
+    // butter knife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // dexter M permissions
+    compile 'com.karumi:dexter:4.1.0'
+    compile 'com.android.support:recyclerview-v7:27.1.0'
+    compile 'com.github.bumptech.glide:glide:4.7.1'
+    implementation project(':openCVLibrary341')
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'org.jsoup:jsoup:1.7.3'
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+
+}

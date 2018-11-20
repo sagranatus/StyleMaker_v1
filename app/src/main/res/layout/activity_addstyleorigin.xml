@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/gofilter"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"/>
+
+    <TextView
+        android:id="@+id/codititle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="22dp"
+        android:text="청청패션"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_view"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/codiimage"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/appicon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dog"/>
+            <ImageView
+                android:id="@+id/appicon2"
+                android:layout_below="@+id/appicon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dog"/>
+            <ImageView
+                android:id="@+id/appicon3"
+                android:layout_below="@+id/appicon2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dog"/>
+            <ImageView
+                android:id="@+id/appicon4"
+                android:layout_toRightOf="@+id/appicon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dog"/>
+            <ImageView
+                android:id="@+id/appicon5"
+                android:layout_toRightOf="@+id/appicon2"
+                android:layout_below="@+id/appicon4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dog"/>
+            <ImageView
+                android:id="@+id/appicon6"
+                android:layout_toRightOf="@+id/appicon3"
+                android:layout_below="@+id/appicon5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dog"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="StyleMaker"/>
+
+</LinearLayout>

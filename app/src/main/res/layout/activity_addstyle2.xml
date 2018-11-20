@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/gofilter"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"/>
+    <LinearLayout
+        android:id="@+id/all"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/codititle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="26dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/codiimage"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl_appicon"
+                android:layout_width="100dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:id="@+id/appicon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:id="@+id/tag1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignTop="@id/appicon"
+                    android:paddingTop="100dp"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_appicon2"
+                android:layout_below="@+id/rl_appicon"
+                android:layout_width="100dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:id="@+id/appicon2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:id="@+id/tag2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignTop="@id/appicon2"
+                    android:paddingTop="100dp"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_appicon3"
+                android:layout_below="@+id/rl_appicon2"
+                android:layout_width="100dp"
+                android:layout_height="70dp">
+                <ImageView
+                    android:id="@+id/appicon3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/tag3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignTop="@id/appicon3"
+                    android:paddingTop="50dp"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_view"
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/codiimage2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl_appicon4"
+                android:layout_width="100dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:id="@+id/appicon4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:id="@+id/tag4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignTop="@id/appicon4"
+                    android:paddingTop="100dp"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_appicon5"
+                android:layout_below="@+id/rl_appicon4"
+                android:layout_width="100dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:id="@+id/appicon5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:id="@+id/tag5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignTop="@id/appicon5"
+                    android:paddingTop="100dp"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_appicon6"
+                android:layout_below="@+id/rl_appicon5"
+                android:layout_width="100dp"
+                android:layout_height="120dp">
+                <ImageView
+                    android:id="@+id/appicon6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"/>
+                <TextView
+                    android:id="@+id/tag6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignTop="@id/appicon6"
+                    android:paddingTop="50dp"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="StyleMaker"/>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:background="@color/colorWhite"
+        android:text="save"/>
+
+</LinearLayout>
